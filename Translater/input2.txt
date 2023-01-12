@@ -1,0 +1,10 @@
+1 Oui
+2 Non 
+3 Merci
+4 Je
+5 Tu vous
+6 le 
+7 Un
+8 le
+9 Et
+10 Mais

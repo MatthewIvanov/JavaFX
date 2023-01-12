@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="393.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.databasebooks.HelloController">
+   <children>
+      <TextField fx:id="Book" layoutX="288.0" layoutY="88.0" prefHeight="54.0" prefWidth="210.0" />
+      <Text layoutX="339.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book" wrappingWidth="90.13671875" />
+      <TextField fx:id="author" layoutX="288.0" layoutY="177.0" prefHeight="54.0" prefWidth="210.0" />
+      <Text layoutX="333.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" wrappingWidth="90.13671875" />
+      <Button layoutX="89.0" layoutY="88.0" mnemonicParsing="false" onMouseClicked="#Add" prefHeight="54.0" prefWidth="74.0" text="Add" />
+      <TableView fx:id="table" layoutX="577.0" layoutY="33.0" prefHeight="328.0" prefWidth="238.0">
+        <columns>
+          <TableColumn fx:id="col3" prefWidth="26.39996337890625" text="id" />
+          <TableColumn fx:id="col1" prefWidth="104.0" text="name" />
+            <TableColumn fx:id="col2" prefWidth="107.20001220703125" text="author" />
+        </columns>
+      </TableView>
+      <Button layoutX="89.0" layoutY="177.0" mnemonicParsing="false" onMouseClicked="#Update" prefHeight="54.0" prefWidth="74.0" text="Update" />
+      <TextField fx:id="ind" layoutX="288.0" layoutY="257.0" prefHeight="54.0" prefWidth="210.0" />
+      <Text layoutX="339.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="90.13671875" />
+   </children>
+</AnchorPane>

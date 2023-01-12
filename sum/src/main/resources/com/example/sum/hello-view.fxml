@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sum.HelloController">
+    <TextField id="num1" fx:id="number1" alignment="CENTER" layoutX="193.0" layoutY="174.0" prefHeight="72.0" prefWidth="115.0" promptText="Введите">
+        <font>
+          <Font size="19.0" />
+        </font>
+    </TextField>
+    <TextField id="num2" fx:id="number2" alignment="CENTER" layoutX="357.0" layoutY="174.0" prefHeight="72.0" prefWidth="115.0" promptText="Введите">
+        <font>
+          <Font size="19.0" />
+        </font>
+    </TextField>
+    <Label layoutX="320.0" layoutY="187.0" prefHeight="46.0" prefWidth="22.0" text="+" textOverrun="WORD_ELLIPSIS">
+        <font>
+          <Font name="Bernard MT Condensed" size="29.0" />
+        </font>
+    </Label>
+   <StackPane layoutX="210.0" layoutY="14.0" prefHeight="150.0" prefWidth="200.0">
+      <children>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d3eaff" height="102.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="243.0" />
+         <Text fx:id="out" />
+      </children>
+   </StackPane>
+   <ButtonBar layoutX="289.0" layoutY="280.0" prefHeight="40.0" prefWidth="74.0">
+      <buttons>
+         <Button mnemonicParsing="false" onAction="#onActionClicked" onMouseClicked="#showResult" text="Button" />
+      </buttons>
+   </ButtonBar>
+</AnchorPane>
